@@ -3,48 +3,17 @@ import './Hero.css'
 
 export default function Hero() {
   return (
-    <section className="hero" id="top">
-      <div className="hero-inner section-inner">
-        <p className="hero-eyebrow">
-          <span className="hero-dot" aria-hidden="true" />
-          {profile.location}
-        </p>
-        <h1 className="hero-title">
-          <span className="hero-name">{profile.name}</span>
-          <span className="hero-role">{profile.role}</span>
-        </h1>
-        <p className="hero-tagline">{profile.tagline}</p>
-        <div className="hero-actions">
-          <a href="#projects" className="btn btn-primary">
-            View projects
-          </a>
-          <a
-            href={profile.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-secondary"
-          >
-            GitHub profile
-          </a>
+    <section id="home" className="hero">
+      <div className="hero-content">
+        <div className="hero-avatar" aria-hidden="true">
+          NB
         </div>
-        <div className="hero-stats">
-          <div className="stat-card">
-            <span className="stat-value">5+</span>
-            <span className="stat-label">Projects shipped</span>
-          </div>
-          <div className="stat-card">
-            <span className="stat-value">Full-stack</span>
-            <span className="stat-label">Web & mobile</span>
-          </div>
-          <div className="stat-card">
-            <span className="stat-value">AI/ML</span>
-            <span className="stat-label">Computer vision</span>
-          </div>
-        </div>
+        <h1>{profile.name}</h1>
+        <p>{profile.headline}</p>
+        <a href="#contact" className="btn">
+          Get in Touch
+        </a>
       </div>
-      <a href="#about" className="scroll-hint" aria-label="Scroll to about section">
-        <span />
-      </a>
     </section>
   )
 }
