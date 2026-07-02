@@ -106,6 +106,18 @@ main {
   background-color: #333;
 }
 
+.social-btn.email {
+  background-color: #ea4335;
+}
+
+.social-btn.phone {
+  background-color: #34a853;
+}
+
+.social-btn.linkedin {
+  background-color: #0077b5;
+}
+
 footer {
   background-color: #f5f5f5;
   padding: 20px 0;
