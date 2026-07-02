@@ -67,13 +67,6 @@ export const projects: Project[] = [
     url: 'https://github.com/nurhakbakici',
   },
   {
-    title: 'UwUFUFU Clone',
-    description:
-      'Real-time multiplayer voting and tournament app inspired by UwUFUFU. Room-based head-to-head polls with Supabase Realtime.',
-    tags: ['Next.js', 'React', 'Supabase', 'TypeScript'],
-    url: 'https://github.com/nurhakbakici',
-  },
-  {
     title: 'Mordheim Warband Manager',
     description:
       'Warband management tool for Mordheim tabletop gaming — members, equipment, skills, and battle logs across 16 database tables.',
@@ -81,14 +74,7 @@ export const projects: Project[] = [
     url: 'https://github.com/nurhakbakici',
   },
   {
-    title: 'Qimia School API',
-    description:
-      'School management REST API built with C# and .NET — part of the Qimia educational platform ecosystem.',
-    tags: ['C#', '.NET', 'REST API'],
-    url: 'https://github.com/nurhakbakici/QimiaSchoolAPI',
-  },
-  {
-    title: 'Bilisim Analiz Projesi',
+    title: 'Aykutsan Stok Yönetim',
     description:
       'Stock management dashboard with CRUD operations, session control, and Chart.js analytics — university information systems project.',
     tags: ['PHP', 'MySQL', 'jQuery', 'Bootstrap'],
