@@ -1,60 +1,97 @@
 .contact-section {
-  padding-bottom: 8rem;
+  padding-bottom: 6rem;
 }
 
 .contact-inner {
-  text-align: center;
-}
-
-.contact-inner .section-label {
+  display: flex;
   justify-content: center;
 }
 
-.contact-inner .section-label::before {
+.contact-card {
+  width: 100%;
+  max-width: 640px;
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background: linear-gradient(
+    160deg,
+    rgba(232, 132, 106, 0.06) 0%,
+    rgba(255, 255, 255, 0.02) 40%,
+    rgba(127, 168, 146, 0.05) 100%
+  );
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.contact-card .section-label {
+  justify-content: center;
+}
+
+.contact-card .section-label::before {
   display: none;
 }
 
+.contact-card .section-title {
+  margin-bottom: 1rem;
+}
+
 .contact-text {
-  max-width: 480px;
-  margin: 0 auto 2.5rem;
-  font-size: 1.0625rem;
+  max-width: 420px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
   color: var(--text-muted);
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 .contact-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.25rem;
+  gap: 1rem;
 }
 
 .contact-link {
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
-  padding: 1.25rem 2rem;
-  background: var(--bg-card);
+  gap: 0.3rem;
+  padding: 1.125rem 1.75rem;
+  background: rgba(10, 14, 20, 0.5);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  min-width: 200px;
-  transition: border-color var(--transition), transform var(--transition);
+  min-width: 180px;
+  transition: border-color var(--transition), transform var(--transition), background var(--transition);
 }
 
 a.contact-link:hover {
-  border-color: var(--accent);
+  border-color: rgba(232, 132, 106, 0.35);
+  background: rgba(10, 14, 20, 0.7);
   transform: translateY(-2px);
 }
 
 .contact-link-label {
-  font-size: 0.75rem;
+  font-size: 0.6875rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-muted);
 }
 
 .contact-link-value {
   font-family: var(--serif);
-  font-size: 1.25rem;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 480px) {
+  .contact-card {
+    padding: 2rem 1.25rem;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-link {
+    min-width: unset;
+  }
 }

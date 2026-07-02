@@ -1,3 +1,4 @@
+import Background from './components/Background'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -9,6 +10,7 @@ import Footer from './components/Footer'
 export default function App() {
   return (
     <>
+      <Background />
       <div className="grain" aria-hidden="true" />
       <Header />
       <main>
