@@ -52,14 +52,6 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    title: 'Spell Card Generator',
-    description:
-      'Client-side Pathfinder 1e/2e spell browser with fuzzy search, filters, and print-ready A4 PDF export — 4-up portrait or 6-up landscape layouts.',
-    tags: ['React', 'TypeScript', 'Vite', 'PDF Export'],
-    url: 'https://github.com/nurhakbakici/spell_card_generator',
-    featured: true,
-  },
-  {
     title: 'Reservoria',
     description:
       'Hospitality reservation backend with property management, dynamic pricing, financial reports, iCal sync, and Filament admin panel.',
