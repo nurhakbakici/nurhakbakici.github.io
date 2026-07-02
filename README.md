@@ -20,4 +20,14 @@ npm run preview
 
 ## Deployment
 
-Pushes to `main` trigger the GitHub Actions workflow in `.github/workflows/deploy.yml`, which builds and deploys to GitHub Pages.
+The site is published at **https://nurhakbakici.github.io** via the `gh-pages` branch.
+
+To redeploy after changes:
+
+```bash
+npm run deploy
+```
+
+This builds the site and pushes the `dist` folder to the `gh-pages` branch.
+
+> **Note:** A GitHub Actions workflow (`.github/workflows/deploy.yml`) is included for automatic deployment on push to `main`, but requires the `workflow` OAuth scope to push. You can enable it later via `gh auth refresh -s workflow`.
