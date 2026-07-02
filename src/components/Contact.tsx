@@ -38,6 +38,13 @@ export default function Contact() {
           <i className="fa fa-github" aria-hidden="true" />
         </a>
       </div>
+      <p className="contact-details">
+        <a href={`mailto:${profile.email}`}>{profile.email}</a>
+        {' · '}
+        <a href={`tel:${profile.phone}`}>{profile.phone}</a>
+        {' · '}
+        {profile.location}
+      </p>
     </section>
   )
 }

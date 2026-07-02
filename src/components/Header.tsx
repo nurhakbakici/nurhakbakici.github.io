@@ -8,7 +8,9 @@ export default function Header() {
   return (
     <header>
       <nav className={open ? 'active' : ''}>
-        <div className="logo">{profile.name}</div>
+        <a href="#home" className="logo" onClick={() => setOpen(false)}>
+          {profile.name}
+        </a>
         <button
           type="button"
           className="menu-toggle"

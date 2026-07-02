@@ -10,6 +10,7 @@ export type Project = TimelineItem
 
 export const profile = {
   name: 'Nurhak Bakıcı',
+  photo: '/profile.jpg',
   headline:
     'Junior Full Stack Developer | Laravel | .NET | React Native | Computer Vision',
   location: 'Buca, İzmir, Turkey',
